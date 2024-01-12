@@ -29,10 +29,8 @@ for (let i = 0; i < 9; i++) {
 
 document.body.classList.add('colorful-background');
 
-
 function cellClick(event) {
   const selectedIndex = event.target.getAttribute('data-index');
-
   if (board[selectedIndex] === '' && gameActive) {
     board[selectedIndex] = currentPlayer;
     event.target.textContent = currentPlayer;
@@ -83,7 +81,6 @@ function resetGame() {
   });
 }
 
-// ... (previous code remains unchanged)
 
 let playerXScoreValue = 0;
 let playerOScoreValue = 0;
