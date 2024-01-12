@@ -21,7 +21,8 @@
 
   <script>
     document.body.classList.add('colorful-background');
-    // Retrieve the game result and scorecard data from the URL query parameters
+    const playerXInput = document.getElementById('playerX');
+    const playerOInput = document.getElementById('playerO');
     const urlParams = new URLSearchParams(window.location.search);
     const result = urlParams.get('result');
     const playerXScore = urlParams.get('playerX');
@@ -33,7 +34,8 @@
 
     // Display the scorecard in a box on the page
     const scorecardDiv = document.getElementById('scorecard');
-    scorecardDiv.innerHTML = `Player X Score: ${playerXScore}<br>Player O Score: ${playerOScore}`;
+    scorecardDiv.innerHTML = `Player X Score: ${playerXScore}:${playerXInput}:<br>Player O Score: ${playerOScore}:${playerOInput}`;
   </script>
 </body>
 </html>
+

@@ -3,6 +3,7 @@ const status = document.getElementById('status');
 const playerXScore = document.getElementById('playerXScore');
 const playerOScore = document.getElementById('playerOScore');
 
+
 let currentPlayer = 'X';
 let cellsFilled = 0;
 let gameActive = true;
